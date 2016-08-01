@@ -1,0 +1,126 @@
+body {
+	font-family: 'Fira SansBook';
+}
+
+ul {
+	font-family: 'Fira Sans';
+}
+.text {
+	font-family: 'Proxima Nova';
+}
+
+
+/* Icons */
+
+.icon {
+	background: url('../img/sprites.png') no-repeat;
+	display: inline-block;
+}
+
+.vk {
+	background-position: 0 -1px ;
+	width: 46px;
+	height: 46px;
+}
+
+.twitter {
+	background-position: -49px 0;
+	width: 47px;
+	height: 47px;
+}
+
+.github {
+	background-position: -149.99999618530273px 0;
+	width: 47px;
+	height: 47px;
+}
+
+.facebook {
+	background-position: -99.99999618530273px 0;
+	width: 47px;
+	height: 47px;
+}
+
+.add-picture {
+	background-position: -1.0000114440917969px -49px ;
+	width: 32px;
+	height: 32px;
+}
+
+.phone {
+	background-position: -118.00000762939453px -48.99106979370117px ;
+	width: 19px;
+	height: 21px;
+}
+
+.skype {
+	background-position: -139.00000762939453px -48.99106979370117px ;
+	width: 20px;
+	height: 20px;
+}
+
+.close {
+	background-position: -68px -49.000003814697266px ;
+	width: 25px;
+	height: 25px;
+}
+
+.cloud-download {
+	background-position: -34px -48.99106979370117px ;
+	width: 32px;
+	height: 24px;
+}
+
+.mail {
+	background-position: -95.00000762939453px -48.99106979370117px ;
+	width: 21px;
+	height: 16px;
+}
+
+.education {
+	background-position: -67.00000762939453px -81.99999618530273px ;
+	width: 41px;
+	height: 23px;
+}
+
+.work {
+	background-position: -0.000011444091796875px -82px ;
+	width: 36px;
+	height: 34px;
+}
+
+.courses {
+	background-position: -39px -81.99999618530273px ;
+	width: 26px;
+	height: 32px;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Fira SansBook';
+    src: url('../fonts/firasans-book.eot');
+    src: url('../fonts/firasans-book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/firasans-book.woff') format('woff'),
+         url('../fonts/firasans-book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/firasans-light.eot');
+    src: url('../fonts/firasans-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/firasans-light.woff') format('woff'),
+         url('../fonts/firasans-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanovacond-semibold-webfont.eot');
+    src: url('../fonts/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanovacond-semibold-webfont.woff') format('woff'),
+         url('../fonts/proximanovacond-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
