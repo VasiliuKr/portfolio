@@ -1,12 +1,284 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+* {
+	box-sizing: border-box;
+}
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
 body {
 	font-family: 'Fira SansBook';
+	color: #4a545d;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.empty {
+	height: 66px;
 }
 
-ul {
-	font-family: 'Fira Sans';
+/* Header */
+
+.header {
+	height: 115px;
+	background: #eef3f6;
 }
-.text {
-	font-family: 'Proxima Nova';
+.header__logo {
+	float: left;
+	margin-top: 39px;
+}
+img.hovered,a:hover>img { display: none }
+a:hover>img.hovered { display: block }
+.header__socials {
+	float: right;
+	margin-top: 35px;
+}
+.header__socials_item {
+	display: inline-block;
+	margin-left: 19px;
+}
+
+/* Content */
+
+.content {
+	background: url('../img/background.png');
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-image: linear-gradient(to right, #eef3f6, #1c667a, #eef3f6);
+	border-image-slice: 1;
+}
+.main {
+	width: 960px;
+	margin: 0px auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.sidebar {
+	width: 250px;
+	margin-right: 60px;
+	float: left;
+	font-size: 21px;
+	color: #959aa8;
+}
+.nav-links {
+	background: #eef3f6;
+	border-radius: 7px;
+}
+.nav-link.active {
+	background: #3ba8c0;
+	color: #fff;
+}
+.nav-link:first-child {
+	border-radius: 7px 7px 0 0;
+}
+.nav-link {
+	display: block;
+	padding: 25px 0 25px 25px;
+	position: relative;
+}
+.nav-link:not(.active):hover {
+	color: #3ba8c0;
+}
+.nav-link:not(.active):hover::after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 2px;
+	background: #3ba8c0;
+	width: 228px;
+	left: 10px;
+	top: 70px;
+}
+.nav-contacts {
+	margin-top: 20px;
+	color: #fff;	
+}
+.nav-contacts_title {
+	background: #3ba8c0;
+	border-radius: 7px 7px 0 0;
+	padding-left: 20px;
+	padding-top: 12px;
+	font-size: 21px;
+	height: 40px;
+}
+.nav-contacts_item {
+	padding-left: 40px;
+	font-size: 17px;
+	line-height: 40px;
+	position: relative;
+}
+.nav-contacts_item:nth-child(2) {
+	background: #41b9d4;
+}
+.nav-contacts_item:nth-child(3) {
+	background: #48cbe8;
+}
+.nav-contacts_item:nth-child(4) {
+	background: #51daf8;
+	border-radius: 0 0 7px 7px;
+}
+.nav-contacts_item:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.nav-contacts_item i {
+	vertical-align: middle;
+}
+.contact {
+	margin-left: 15px;	
+}
+.about {
+	float: left;
+	width: 650px;
+}
+.about__section {
+	background: #eef3f6;
+	padding-bottom: 25px;
+}
+.about__section:not(:last-child) {
+	margin-bottom: 25px;
+}
+.about__section:last-child {
+	margin-top: 29px;
+}
+.about__section_title {
+	height: 69px;
+	color: #3ba8c0;
+	font-size: 27px;
+}
+.about__section_title span {
+	border-bottom: 2px solid #3ba8c0;
+	line-height: 69px;
+	padding: 12px 22px;
+}
+.main-info {
+	position: relative;
+	padding-bottom: 17px;
+}
+.main-info_avatar {
+	float: left;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 4px solid #3ba8c0;
+	margin: 35px 24px 0 55px;
+}
+.main-info_avatar img {
+	width: 147px;
+}
+.main-info__list {
+	float: left;
+	margin-top: 17px;
+	max-width: 410px;
+}
+.main-info_item {
+	position: relative;
+	margin-bottom: 7px;
+}
+.info-question {
+	float: left;
+	margin-right: 20px;
+	font: bold 17px 'Fira Sans';
+}
+.info-data {
+	float: left;
+	max-width: 220px;
+	font-size: 15px;
+	line-height: 27px;
+}
+.skills-list {
+	position: relative;
+}
+.skills-item {
+	float: left;
+	font: 14px 'Proxima Nova';
+	color: #fff;
+	padding: 1px 14px;
+	background: linear-gradient(to bottom, #3ba8c0 50%, #2e8ca2 50%);
+	border-radius: 2px;
+	margin-right: 8px;
+	margin-top: 7px;
+}
+.skills-item:last-child {
+	margin-right: 0;
+}
+.section-list {
+	position: relative;
+	margin-top: 26px;
+	margin-left: 57px;
+	margin-bottom: -6px;
+}
+.section-list__item {
+	margin-bottom: 17px;
+}
+.section-list__item .icon {
+	float: left;
+}
+.section-list__item .education {
+	margin-right: -5px;
+}
+.section-list__item .courses {
+	margin-left: 10px;
+}
+
+.experience-info {
+	float: left;
+	margin-left: 31px;
+}
+.experience-info_place {
+	font-size: 17px;
+}
+.experience-info_period {
+	font: 15px 'Fira Sans';
+}
+
+/* Footer */
+
+.footer {
+	height: 66px;
+	margin-top: -66px;
+	position: relative;
+	background: #f1f5f8;
+}
+.footer__copyright {
+	margin-left: 220px;
+	margin-top: 33px;
+	font-size: 13px;
+	float: left;
 }
 
 
@@ -17,82 +289,131 @@ ul {
 	display: inline-block;
 }
 
-.vk {
-	background-position: 0 -1px ;
-	width: 46px;
-	height: 46px;
-}
-
-.twitter {
-	background-position: -49px 0;
+.facebook{
+	background-position: -293px 0;
 	width: 47px;
 	height: 47px;
 }
 
-.github {
-	background-position: -149.99999618530273px 0;
+.facebook:hover{
+	background-position: -342px 0;
 	width: 47px;
 	height: 47px;
 }
 
-.facebook {
-	background-position: -99.99999618530273px 0;
+.github{
+	background-position: -195px 0;
 	width: 47px;
 	height: 47px;
 }
 
-.add-picture {
-	background-position: -1.0000114440917969px -49px ;
-	width: 32px;
-	height: 32px;
+.github:hover{
+	background-position: -244px 0;
+	width: 47px;
+	height: 47px;
 }
 
-.phone {
-	background-position: -118.00000762939453px -48.99106979370117px ;
+.twitter{
+	background-position: -96px 0;
+	width: 47px;
+	height: 47px;
+}
+
+.twitter:hover{
+	background-position: -145px 0;
+	width: 47px;
+	height: 47px;
+}
+
+.vk{
+	background-position: 0px 0px ;
+	width: 47px;
+	height: 47px;
+}
+
+.vk:hover{
+	background-position: -47px 0;
+	width: 47px;
+	height: 47px;
+}
+
+.phone{
+	background-position: -119px -50px ;
 	width: 19px;
 	height: 21px;
 }
 
-.skype {
-	background-position: -139.00000762939453px -48.99106979370117px ;
+.skype{
+	background-position: -140.99998474121094px -50px ;
 	width: 20px;
 	height: 20px;
 }
 
-.close {
-	background-position: -68px -49.000003814697266px ;
+.add-picture{
+	background-position: 0 -49px ;
+	width: 32px;
+	height: 32px;
+}
+
+.close{
+	background-position: -68.99998474121094px -50px ;
 	width: 25px;
 	height: 25px;
 }
 
-.cloud-download {
-	background-position: -34px -48.99106979370117px ;
+.cloud-download{
+	background-position: -34.98748779296875px -50px ;
 	width: 32px;
 	height: 24px;
 }
 
-.mail {
-	background-position: -95.00000762939453px -48.99106979370117px ;
+.mail{
+	background-position: -95.98748779296875px -50px ;
 	width: 21px;
 	height: 16px;
 }
 
-.education {
-	background-position: -67.00000762939453px -81.99999618530273px ;
+.education{
+	background-position: -38px -85px ;
 	width: 41px;
 	height: 23px;
 }
 
-.work {
-	background-position: -0.000011444091796875px -82px ;
+.lock{
+	background-position: -107px -85px ;
+	width: 20px;
+	height: 32px;
+	display: block;
+	margin-left: 250px;
+	margin-top: 20px;
+	float: left;
+}
+
+.lock:hover{
+	background-position: -128px -85px ;
+	width: 20px;
+	height: 32px;
+}
+
+.work{
+	background-position: 0 -84px ;
 	width: 36px;
 	height: 34px;
 }
 
-.courses {
-	background-position: -39px -81.99999618530273px ;
+.courses{
+	background-position: -80.98751831054688px -85px ;
 	width: 26px;
 	height: 32px;
+}
+.icon-lock {
+	display: block;
+	background: url('../img/icons/lock.png') no-repeat;
+	width: 20px;
+	height: 32px;
+	margin-left: 250px;
+	margin-top: 20px;
+	float: left;
 }
 
 /* Fonts */
@@ -122,5 +443,15 @@ ul {
          url('../fonts/proximanovacond-semibold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+ /* Clearfix */
 
+.cf:before,
+.cf:after {
+  content: " "; 
+  display: table; 
+}
+
+.cf:after {
+   clear: both;
 }

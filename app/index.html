@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
 		<title>Portfolio</title>
@@ -7,15 +7,138 @@
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	</head>
 	<body>
-		<h1>Заголовок</h1>
-		<a href=""><i class="icon vk"></i></a>
-		<ul>
-			<li>item 1</li>
-			<li>item 2</li>
-			<li>item 3</li>
-		</ul>
-		<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus odit accusamus illum, quas sapiente mollitia veritatis qui dolorem eligendi voluptas.</p>
-
+		<div class="wrapper">
+			<header class="header">
+				<div class="container cf">
+					<div class="header__logo">
+						<a href="">
+							<img src="img/logo.png" alt="">
+							<img src="img/logo-hover.png" class="hovered" alt="">
+						</a>
+					</div>
+					<ul class="header__socials">
+						<li class="header__socials_item">
+							<a href=""><i class="icon vk"></i></a>
+							</li>
+						<li class="header__socials_item">
+							<a href=""><i class="icon twitter"></i></a>
+							</li>
+						<li class="header__socials_item">
+							<a href=""><i class="icon facebook"></i></a>
+							</li>
+						<li class="header__socials_item">
+							<a href=""><i class="icon github"></i></a>
+							</li>
+					</ul>
+				</div>
+			</header>
+			<div class="content">
+				<div class="main cf">
+					<aside class="sidebar">
+						<nav class="nav-links">
+							<a href="" class="nav-link active">Обо мне</a>
+							<a href="" class="nav-link">Мои работы</a>
+							<a href="" class="nav-link">Связаться со мной</a>
+						</nav>
+						<ul class="nav-contacts">
+							<li class="nav-contacts_title">Контакты</li>
+							<li class="nav-contacts_item">
+								<a href="mailto:pochta@mail.ru"><i class="icon mail"></i><span class="contact">pochta@mail.ru</span></a>
+							</li>
+							<li class="nav-contacts_item">
+								<a href="skype:+79812342323?call"><i class="icon phone"></i><span class="contact">+79812342323</span></a>
+							</li>
+							<li class="nav-contacts_item">
+								<a href="skype:nickname?call"><i class="icon skype"></i><span class="contact">nickname</span></a>
+							</li>
+						</ul>
+					</aside>
+					<div class="about">
+						<section class="about__section">
+							<h2 class="about__section_title"><span>Основная информация</span></h2>
+							<div class="main-info cf">
+								<div class="main-info_avatar">
+									<img src="img/userpic.jpg" alt="">
+								</div>
+								<ul class="main-info__list">
+									<li class="main-info_item cf">
+										<div class="info-question">Меня зовут:</div>
+										<div class="info-data">Иванов Андрей Степанович</div>
+									</li>
+									<li class="main-info_item cf">
+										<div class="info-question">Мой возраст:</div>
+										<div class="info-data">25 лет</div>
+									</li>
+									<li class="main-info_item cf">
+										<div class="info-question">Мой город:</div>
+										<div class="info-data">Санкт-Петербург, Россия</div>
+									</li>
+									<li class="main-info_item cf">
+										<div class="info-question">Моя специализация:</div>
+										<div class="info-data">FRONTEND разработчик</div>
+									</li>
+									<li class="main-info_item cf">
+										<div class="info-question">Ключевые навыки:</div>
+										<div class="info-data">
+											<ul class="skills-list cf">
+												<li class="skills-item">html</li>
+												<li class="skills-item">css</li>
+												<li class="skills-item">javascript</li>
+												<li class="skills-item">gulp</li>
+												<li class="skills-item">git</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</section>
+						<section class="about__section">
+							<h2 class="about__section_title"><span>Опыт работы</span></h2>
+							<ul class="section-list">
+								<li class="section-list__item cf">
+									<i class="icon work"></i>
+									<div class="experience-info">
+										<div class="experience-info_place">"ИП Боровицкий" - Продавец дисков</div>
+										<div class="experience-info_period">Сентябрь 2005 - Август 2008</div>
+									</div>
+								</li>
+								<li class="section-list__item cf">
+									<i class="icon work"></i>
+									<div class="experience-info">
+										<div class="experience-info_place">"ООО Системы безопастности" - Системный администратор</div>
+										<div class="experience-info_period">Июнь 2008 - Июль 2010</div>
+									</div>
+								</li>
+							</ul>
+						</section>
+						<section class="about__section">
+							<h2 class="about__section_title"><span>Образование</span></h2>
+							<ul class="section-list">
+								<li class="section-list__item cf">
+									<i class="icon education"></i>
+									<div class="experience-info">
+										<div class="experience-info_place">Незаконченное высшее. СПБГУ ИТМО</div>
+										<div class="experience-info_period">Октябрь 2012 - по настоящее время</div>
+									</div>
+								</li>
+								<li class="section-list__item cf">
+									<i class="icon courses"></i>
+									<div class="experience-info">
+										<div class="experience-info_place">Курсы Loftschool.ru</div>
+										<div class="experience-info_period">Ноябрь 2014 - по настоящее время</div>
+									</div>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+			<div class="empty"></div>
+		</div>
+		<footer class="footer">
+			<a href=""><i class="icon lock"></i></a>
+			<div class="footer__copyright cf">© 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+		</footer>
 		<script src="bower/jquery/dist/jquery.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
