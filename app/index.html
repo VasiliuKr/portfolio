@@ -2,33 +2,37 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>Portfolio</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>раснов Василий</title>
+		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/about.css">
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 	</head>
 	<body>
 		<div class="wrapper">
-			<header class="header">
-				<div class="container cf">
+			<header class="header cf">
+				<div class="header-container">
 					<div class="header__logo">
-						<a href="">
-							<img src="img/logo.png" alt="">
-							<img src="img/logo-hover.png" class="hovered" alt="">
+						<a href="http://loftschool.com">
+							<img src="img/logo.png" alt="Loftschool">
+							<img src="img/logo-hover.png" class="hovered" alt="Loftschool">
 						</a>
 					</div>
 					<ul class="header__socials">
 						<li class="header__socials_item">
-							<a href=""><i class="icon vk"></i></a>
-							</li>
+							<a href="https://vk.com/id17323389"><i class="vk"></i></a>
+						</li>
 						<li class="header__socials_item">
-							<a href=""><i class="icon twitter"></i></a>
-							</li>
-						<li class="header__socials_item">
-							<a href=""><i class="icon facebook"></i></a>
-							</li>
-						<li class="header__socials_item">
-							<a href=""><i class="icon github"></i></a>
-							</li>
+							<a href="https://github.com/VasiliuKr"><i class="icon github"></i></a>
+						</li>
 					</ul>
 				</div>
 			</header>
@@ -36,20 +40,26 @@
 				<div class="main cf">
 					<aside class="sidebar">
 						<nav class="nav-links">
-							<a href="" class="nav-link active">Обо мне</a>
-							<a href="" class="nav-link">Мои работы</a>
-							<a href="" class="nav-link">Связаться со мной</a>
+							<a href="index.html" class="nav-link active">
+								<div class="nav-link_inner">Обо мне</div>
+							</a>
+							<a href="projects.html" class="nav-link">
+								<div class="nav-link_inner">Мои работы</div>
+							</a>
+							<a href="contact.html" class="nav-link">
+								<div class="nav-link_inner nav-link_inner-last">Связаться со мной</div>
+							</a>
 						</nav>
 						<ul class="nav-contacts">
 							<li class="nav-contacts_title">Контакты</li>
 							<li class="nav-contacts_item">
-								<a href="mailto:pochta@mail.ru"><i class="icon mail"></i><span class="contact">pochta@mail.ru</span></a>
+								<a href="mailto:pochta@mail.ru"><i class="icon mail"></i><span class="contact">vasil.crasnov@yandex.ru</span></a>
 							</li>
 							<li class="nav-contacts_item">
-								<a href="skype:+79812342323?call"><i class="icon phone"></i><span class="contact">+79812342323</span></a>
+								<a href="skype:+79812342323?call"><i class="icon phone"></i><span class="contact">+79051979764</span></a>
 							</li>
 							<li class="nav-contacts_item">
-								<a href="skype:nickname?call"><i class="icon skype"></i><span class="contact">nickname</span></a>
+								<a href="skype:nickname?call"><i class="icon skype"></i><span class="contact">vaso.lol</span></a>
 							</li>
 						</ul>
 					</aside>
@@ -57,21 +67,23 @@
 						<section class="about__section">
 							<h2 class="about__section_title"><span>Основная информация</span></h2>
 							<div class="main-info cf">
-								<div class="main-info_avatar">
-									<img src="img/userpic.jpg" alt="">
+								<div class="avatar__wrapper">
+									<div class="avatar">
+										<img src="img/userpic.jpg" alt="Photo">
+									</div>
 								</div>
 								<ul class="main-info__list">
 									<li class="main-info_item cf">
 										<div class="info-question">Меня зовут:</div>
-										<div class="info-data">Иванов Андрей Степанович</div>
+										<div class="info-data">Краснов Василий Зосимович</div>
 									</li>
 									<li class="main-info_item cf">
 										<div class="info-question">Мой возраст:</div>
-										<div class="info-data">25 лет</div>
+										<div class="info-data">30 лет</div>
 									</li>
 									<li class="main-info_item cf">
 										<div class="info-question">Мой город:</div>
-										<div class="info-data">Санкт-Петербург, Россия</div>
+										<div class="info-data">Чебоксары, Россия</div>
 									</li>
 									<li class="main-info_item cf">
 										<div class="info-question">Моя специализация:</div>
@@ -86,6 +98,7 @@
 												<li class="skills-item">javascript</li>
 												<li class="skills-item">gulp</li>
 												<li class="skills-item">git</li>
+												<li class="skills-item">bootstrap</li>
 											</ul>
 										</div>
 									</li>
@@ -98,15 +111,22 @@
 								<li class="section-list__item cf">
 									<i class="icon work"></i>
 									<div class="experience-info">
-										<div class="experience-info_place">"ИП Боровицкий" - Продавец дисков</div>
-										<div class="experience-info_period">Сентябрь 2005 - Август 2008</div>
+										<div class="experience-info_place">Администрация Горномарийского района - Ведущий специалист</div>
+										<div class="experience-info_period">Июнь 2009 - Декабрь 2010</div>
 									</div>
 								</li>
 								<li class="section-list__item cf">
 									<i class="icon work"></i>
 									<div class="experience-info">
-										<div class="experience-info_place">"ООО Системы безопастности" - Системный администратор</div>
-										<div class="experience-info_period">Июнь 2008 - Июль 2010</div>
+										<div class="experience-info_place">Виловатовский социально-культурный комплекс - Главный бухгалтер</div>
+										<div class="experience-info_period">Февраль 2011 - Июль 2014</div>
+									</div>
+								</li>
+								<li class="section-list__item cf">
+									<i class="icon work"></i>
+									<div class="experience-info">
+										<div class="experience-info_place">"Центр финансового и хозяйственного обеспечения" Минкультуры Чувашии - Начальник отдела</div>
+										<div class="experience-info_period">Апрель 2015 - Май 2016</div>
 									</div>
 								</li>
 							</ul>
@@ -117,15 +137,15 @@
 								<li class="section-list__item cf">
 									<i class="icon education"></i>
 									<div class="experience-info">
-										<div class="experience-info_place">Незаконченное высшее. СПБГУ ИТМО</div>
-										<div class="experience-info_period">Октябрь 2012 - по настоящее время</div>
+										<div class="experience-info_place">Высшее экономическое. МарГТУ г. Йошкар-Ола</div>
+										<div class="experience-info_period">Сентябрь 2003 - Июль 2008</div>
 									</div>
 								</li>
 								<li class="section-list__item cf">
 									<i class="icon courses"></i>
 									<div class="experience-info">
 										<div class="experience-info_place">Курсы Loftschool.ru</div>
-										<div class="experience-info_period">Ноябрь 2014 - по настоящее время</div>
+										<div class="experience-info_period">Сентябрь 2016 - Ноябрь 2016</div>
 									</div>
 								</li>
 							</ul>
@@ -136,8 +156,10 @@
 			<div class="empty"></div>
 		</div>
 		<footer class="footer">
-			<a href=""><i class="icon lock"></i></a>
-			<div class="footer__copyright cf">© 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+			<div class="footer__container cf">
+				<a href=""><i class="icon lock"></i></a>
+				<div class="footer__copyright">© 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+			</div>
 		</footer>
 		<script src="bower/jquery/dist/jquery.min.js"></script>
 		<script src="js/main.js"></script>

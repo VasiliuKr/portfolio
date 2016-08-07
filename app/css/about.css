@@ -1,0 +1,90 @@
+/* Content */
+
+.about__section:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.main-info {
+	position: relative;
+	padding-bottom: 17px;
+}
+.avatar__wrapper {
+	float: left;
+	margin: 35px 24px 0 55px;
+}
+.avatar {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 4px solid #3ba8c0;
+}
+.avatar img {
+	width: 146px;
+}
+.main-info__list {
+	float: left;
+	margin-top: 17px;
+	max-width: 410px;
+}
+.main-info_item {
+	position: relative;
+	margin-bottom: 7px;
+}
+.info-question {
+	float: left;
+	margin-right: 20px;
+	font: bold 17px 'Fira Sans';
+}
+.info-data {
+	float: left;
+	max-width: 220px;
+	font-size: 15px;
+	line-height: 27px;
+}
+.skills-list {
+	position: relative;
+}
+.skills-item {
+	float: left;
+	font: 14px 'Proxima Nova';
+	color: #fff;
+	padding: 1px 14px;
+	background: linear-gradient(to bottom, #3ba8c0 50%, #2e8ca2 50%);
+	border-radius: 2px;
+	margin-right: 8px;
+	margin-top: 7px;
+}
+.skills-item:last-child {
+	margin-right: 0;
+}
+.section-list {
+	position: relative;
+	margin-top: 26px;
+	margin-left: 57px;
+	margin-bottom: -6px;
+}
+.section-list__item {
+	margin-bottom: 17px;
+}
+.section-list__item .icon {
+	float: left;
+}
+.section-list__item .education {
+	margin-right: -5px;
+}
+.section-list__item .courses {
+	margin-left: 10px;
+}
+
+.experience-info {
+	float: left;
+	margin-left: 31px;
+	width: 470px;
+}
+.experience-info_place {
+	font-size: 17px;
+}
+.experience-info_period {
+	font: 15px 'Fira Sans';
+}
