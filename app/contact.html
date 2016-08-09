@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>раснов Василий</title>
 		<link rel="icon" href="favicon.ico">
-		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/contact.css">
+		
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -62,6 +64,36 @@
 							</li>
 						</ul>
 					</aside>
+					<div class="about">
+						<div class="form__wrapper">
+							<div class="form-title">У вас интересный проект? Напишите мне</div>
+							<div class="form-container">
+								<form action="" class="contact-form cf">
+									<fieldset class="contact-form__fieldset">
+										<label for="" class="form_title">Имя</label>
+										<input type="text" class="form_input" name="user-name" value="" placeholder="Как к Вам обращаться">
+									</fieldset>
+									<fieldset class="contact-form__fieldset">
+										<label for="" class="form_title">Email</label>
+										<input type="email" class="form_input" name="user-email" value="" placeholder="Куда мне писать">
+									</fieldset>
+									<fieldset class="contact-form__fieldset">
+										<label for="" class="form_title">Сообщение</label>
+										<textarea name="message" class="form_input" cols="50" rows="8" placeholder="Кратко в чем суть"></textarea>
+									</fieldset>
+									<fieldset class="contact-form__fieldset cf">
+										<label for="" class="form_title">Введите код, указанный на картинке</label>
+										<div class="captcha-image">
+											<img src="img/captcha.png" class="captcha-image_pic" alt="">
+										</div>
+										<input type="text" class="form_input form_input-keystring" name="keystring" value="" placeholder="Введите код">
+									</fieldset>
+									<input type="submit" class="btn btn-submit" value="Отправить">
+									<input type="reset" class="btn btn-reset" value="Очистить">
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		

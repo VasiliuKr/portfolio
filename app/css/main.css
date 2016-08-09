@@ -97,7 +97,7 @@ a:hover>img.hovered { display: block }
 }
 .nav-links {
 	background: #eef3f6;
-	border-radius: 7px;
+	border-radius: 4px;
 	margin-bottom: 20px;
 	overflow: hidden;
 }
@@ -121,10 +121,11 @@ a:hover>img.hovered { display: block }
 }
 .nav-contacts {
 	color: #fff;	
+	border-radius: 4px;
+	overflow: hidden;
 }
 .nav-contacts_title {
 	background: #3ba8c0;
-	border-radius: 7px 7px 0 0;
 	padding-left: 20px;
 	padding-top: 12px;
 	font-size: 21px;
@@ -144,7 +145,6 @@ a:hover>img.hovered { display: block }
 }
 .nav-contacts_item:nth-child(4) {
 	background: #51daf8;
-	border-radius: 0 0 7px 7px;
 }
 .nav-contacts_item:hover {
 	text-decoration: underline;
@@ -159,6 +159,8 @@ a:hover>img.hovered { display: block }
 .about {
 	float: left;
 	width: 650px;
+	border-radius: 5px;
+	overflow: hidden;
 }
 .about__section {
 	background: #eef3f6;
