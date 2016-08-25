@@ -159,12 +159,11 @@ a:hover>img.hovered { display: block }
 .about {
 	float: left;
 	width: 650px;
-	border-radius: 5px;
-	overflow: hidden;
 }
 .about__section {
 	background: #eef3f6;
 	padding-bottom: 25px;
+	border-radius: 5px;
 }
 
 .about__section_title {
@@ -199,7 +198,7 @@ a:hover>img.hovered { display: block }
 
 .footer__copyright {
 	margin-top: 33px;
-	font-size: 13px;
+	font-size: 16px;
 	float: left;
 	width: 850px;
 	margin-left: 50px;
@@ -283,13 +282,13 @@ a:hover>img.hovered { display: block }
 }
 
 .close{
-	background-position: -68.99998474121094px -50px ;
+	background-position: -68px -50px ;
 	width: 25px;
 	height: 25px;
 }
 
-.cloud-download{
-	background-position: -34.98748779296875px -50px ;
+.cloud-upload{
+	background-position: -34px -50px ;
 	width: 32px;
 	height: 24px;
 }

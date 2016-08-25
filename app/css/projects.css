@@ -2,7 +2,7 @@
 
 .projects-list {
 	padding: 27px 0 0 24px;
-	text-align: justify;
+	text-align: left;
 }
 .projects-list:after {
 	display: inline-block;
@@ -12,8 +12,9 @@
 }
 .projects-list_item {
 	width: 181px;
-	float: left;
-	margin-right: 27px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 23px;
 	margin-bottom: 40px;
 }
 
@@ -82,4 +83,129 @@
 	color: #3ba8c0;
 	text-align: center;
 	margin-top: 30px;
+}
+.form__wrapper {
+	width: 360px;
+	display: none;
+}
+.form-title {
+	font: 25px 'Fira Sans';
+	padding: 2px 10px;
+	text-align: left;
+	border-bottom: 8px solid #67dffa;
+}
+.button-close {
+	background: none;
+	border: none;
+	margin-left: 66px;
+	padding: 0;
+	cursor: pointer;
+}
+.close, .cloud-upload {
+	vertical-align: middle;
+}
+.form-container {
+	width: 320px;
+	margin: 10px auto;
+	padding-bottom: 30px;
+}
+.form_alert {
+	border-radius: 4px;
+	position: relative;
+	padding-left: 8px;
+	padding-top: 5px;
+	margin-bottom: 10px;
+	display: none;
+}
+.form_alert-fail {
+	border: 1px solid #f97e76;
+	background: #fad2d1;
+}
+.form_alert-success {
+	border: 1px solid #49bb7b;
+	background: #cde6dd;
+}
+.alert_close {
+	position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 11px;
+  height: 11px;
+  border: none;
+  cursor: pointer;
+}
+.alert_close-fail {
+	background: url('../img/icons/fail-close.png');
+}
+.alert_close-success {
+	background: url('../img/icons/successl-close.png');
+}
+.alert_title {
+	font-size: 25px;
+	line-height: 1;
+}
+.alert_text {
+	font-size: 15px;
+}
+.fail {
+	color: #f97e76;
+}
+.success {
+	color: #49bb7b;
+}
+.contact-form__fieldset {
+	width: 100%;
+}
+.contact-form__fieldset {
+	float: none;
+	margin-right: 0;
+}
+input.form_input {
+	width: 100%;
+}
+.form_title {
+	font: 17px 'Fira SansBook';
+}
+.file-upload {
+	position: relative;
+	overflow: hidden;
+	border-radius: 4px;
+	border: 1px solid #67dffa;
+	display: block;
+	color: #67dffa;
+	font: bold 13px 'Fira Sans';
+	background: #fff;
+}
+.file-upload.error {
+	border: 1px solid #f97e76;
+	background: #fad2d1;
+}
+.button-upload {
+	background: #48cbe8;
+	border: none;
+	padding: 9px 8px;
+	cursor: pointer;
+	float: right;
+}
+.file-upload_text {
+	padding: 10px 8px;
+}
+.form_input-upload {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+	transform: scale(20);
+	letter-spacing: 10em;     /* IE 9 fix */
+	-ms-transform: scale(20); /* IE 9 fix */
+}
+textarea.form_input {
+	width: 100%;
+}
+.btn-submit {
+	float: none;
+	margin: 5px auto;
+	display: block;
 }

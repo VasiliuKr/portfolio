@@ -68,25 +68,45 @@
 						<div class="form__wrapper">
 							<div class="form-title">У вас интересный проект? Напишите мне</div>
 							<div class="form-container">
-								<form action="" class="contact-form cf">
+								<form action="" method="" class="contact-form cf">
 									<fieldset class="contact-form__fieldset">
-										<label for="" class="form_title">Имя</label>
-										<input type="text" class="form_input" name="user-name" value="" placeholder="Как к Вам обращаться">
+										<label for="user-name" class="form_title">Имя</label>
+										<div class="input-wrapper">
+											<input type="text" class="form_input" name="user-name" id="user-name" value="" placeholder="Как к Вам обращаться">
+											<div class="tooltip tooltip-left">
+												<span class="tooltip-text tooltip-text-left">Вы не ввели имя</span>
+											</div>
+										</div>
 									</fieldset>
 									<fieldset class="contact-form__fieldset">
-										<label for="" class="form_title">Email</label>
-										<input type="email" class="form_input" name="user-email" value="" placeholder="Куда мне писать">
+										<label for="user-email" class="form_title">Email</label>
+										<div class="input-wrapper">
+											<input type="email" class="form_input error" name="user-email" id="user-email" value="" placeholder="Куда мне писать">
+											<div class="tooltip tooltip-right">
+												<span class="tooltip-text tooltip-text-right">Вы не ввели email</span>
+											</div>
+										</div>
 									</fieldset>
 									<fieldset class="contact-form__fieldset">
-										<label for="" class="form_title">Сообщение</label>
-										<textarea name="message" class="form_input" cols="50" rows="8" placeholder="Кратко в чем суть"></textarea>
+										<label for="message" class="form_title">Сообщение</label>
+										<div class="input-wrapper">
+											<textarea name="message" id="message" class="form_input error" cols="50" rows="8" placeholder="Кратко в чем суть"></textarea>
+											<div class="tooltip tooltip-left">
+												<span class="tooltip-text tooltip-text-left">Ваш вопрос</span>
+											</div>
+										</div>
 									</fieldset>
 									<fieldset class="contact-form__fieldset cf">
-										<label for="" class="form_title">Введите код, указанный на картинке</label>
+										<label for="keystring" class="form_title">Введите код, указанный на картинке</label>
 										<div class="captcha-image">
 											<img src="img/captcha.png" class="captcha-image_pic" alt="">
 										</div>
-										<input type="text" class="form_input form_input-keystring" name="keystring" value="" placeholder="Введите код">
+										<div class="input-wrapper">
+											<input type="text" class="form_input form_input-keystring" name="keystring" id="keystring" value="" placeholder="Введите код">
+											<div class="tooltip tooltip-right">
+												<span class="tooltip-text tooltip-text-right">Вы не ввели код</span>
+											</div>
+										</div>
 									</fieldset>
 									<input type="submit" class="btn btn-submit" value="Отправить">
 									<input type="reset" class="btn btn-reset" value="Очистить">
@@ -101,8 +121,8 @@
 		</div>
 		<footer class="footer">
 			<div class="footer__container cf">
-				<a href=""><i class="icon lock"></i></a>
-				<div class="footer__copyright">© 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+				<a href="autorization.html"><i class="icon lock"></i></a>
+				<div class="footer__copyright">© 2016. Краснов Василий</div>
 			</div>
 		</footer>
 		<script src="bower/jquery/dist/jquery.min.js"></script>

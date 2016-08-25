@@ -8,6 +8,7 @@
 		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/contact.css">
 		<link rel="stylesheet" href="css/projects.css">
 		
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -142,19 +143,80 @@
 								</li>
 							</ul>
 						</section>
-
+						<div class="form__wrapper">
+							<div class="form-title">
+								<span>Добавление проекта</span>
+								<button type="button" class="button-close"><i class="icon close"></i></button>
+							</div>
+							<div class="form-container">
+								<div class="form_alert form_alert-fail">
+									<button class="alert_close alert_close-fail"></button>
+									<div class="alert_title fail">Ошибка!</div>
+									<div class="alert_text fail">Невозможно добавить проект.</div>
+								</div>
+								<div class="form_alert form_alert-success">
+									<button class="alert_close alert_close-success"></button>
+									<div class="alert_title success">Ура!</div>
+									<div class="alert_text success">Проект успешно добавлен.</div>
+								</div>
+								<form action="" method="" class="contact-form cf">
+									<fieldset class="contact-form__fieldset">
+										<label for="project-name" class="form_title">Название проекта</label>
+										<div class="input-wrapper">
+											<input type="text" class="form_input error" name="project-name" id="project-name" value="" placeholder="Введите название">
+											<div class="tooltip tooltip-left">
+												<span class="tooltip-text tooltip-text-left">введите название</span>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="contact-form__fieldset">
+										<label for="project-image" class="form_title">Картинка проекта</label>
+										<div class="input-wrapper">
+											<div class="file-upload error">
+												<button type="button" class="button-upload"><i class="icon cloud-upload"></i></button>
+												<div class="file-upload_text">Загрузите изображение</div>
+												<input type="file" class="form_input-upload error" name="project-image" id="project-image">
+											</div>
+											<div class="tooltip tooltip-left">
+												<span class="tooltip-text tooltip-text-left">изображение</span>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="contact-form__fieldset">
+										<label for="project-url" class="form_title">URL проекта</label>
+										<div class="input-wrapper">
+											<input type="text" class="form_input error" name="project-url" id="project-url" value="" placeholder="Добавьте ссылку">
+											<div class="tooltip tooltip-left">
+												<span class="tooltip-text tooltip-text-left">ссылка на проект</span>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="contact-form__fieldset">
+										<label for="project-description" class="form_title">Описание</label>
+										<div class="input-wrapper">
+											<textarea class="form_input error" name="project-description" id="project-description" cols="50" rows="5" placeholder="Пара слов о Вашем проекте"></textarea>
+											<div class="tooltip tooltip-left">
+												<span class="tooltip-text tooltip-text-left">описание проекта</span>
+											</div>
+										</div>
+									</fieldset>
+									<input type="submit" class="btn btn-submit" value="Добавить">
+								</form>
+							</div>
+						</div>
 					</div>
+
 				</div>
 			</div>
 			<div class="empty"></div>
 		</div>
 		<footer class="footer">
 			<div class="footer__container cf">
-				<a href=""><i class="icon lock"></i></a>
-				<div class="footer__copyright">© 2016. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+				<a href="autorization.html"><i class="icon lock"></i></a>
+				<div class="footer__copyright">© 2016. Краснов Василий</div>
 			</div>
 		</footer>
 		<script src="bower/jquery/dist/jquery.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/image-upload.js"></script>
 	</body>
 </html>
