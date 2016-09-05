@@ -68,7 +68,7 @@
 						<div class="form__wrapper">
 							<div class="form-title">У вас интересный проект? Напишите мне</div>
 							<div class="form-container">
-								<form action="" method="" class="contact-form cf">
+								<form action="" method="" class="contact-form cf" id="contact-me">
 									<fieldset class="contact-form__fieldset">
 										<label for="userName" class="form_title">Имя</label>
 										<div class="input-wrapper">
@@ -81,7 +81,7 @@
 									<fieldset class="contact-form__fieldset">
 										<label for="userEmail" class="form_title">Email</label>
 										<div class="input-wrapper">
-											<input type="email" class="form_input error" name="userEmail" id="userEmail" value="" placeholder="Куда мне писать">
+											<input type="email" class="form_input" name="userEmail" id="userEmail" value="" placeholder="Куда мне писать">
 											<div class="tooltip tooltip-right">
 												<span class="tooltip-text tooltip-text-right">Вы не ввели email</span>
 											</div>
@@ -90,7 +90,7 @@
 									<fieldset class="contact-form__fieldset">
 										<label for="message" class="form_title">Сообщение</label>
 										<div class="input-wrapper">
-											<textarea name="message" id="message" class="form_input error" cols="50" rows="8" placeholder="Кратко в чем суть"></textarea>
+											<textarea name="message" id="message" class="form_input" cols="50" rows="8" placeholder="Кратко в чем суть"></textarea>
 											<div class="tooltip tooltip-left">
 												<span class="tooltip-text tooltip-text-left">Ваш вопрос</span>
 											</div>
@@ -125,7 +125,9 @@
 				<div class="footer__copyright">© 2016. Краснов Василий</div>
 			</div>
 		</footer>
-		<script src="bower/jquery/dist/jquery.min.js"></script>
-		
+		<script src="bower/jquery/dist/jquery.js"></script>
+		<script src="js/validation.js"></script>
+		<script src="js/contact-me.js"></script>
+
 	</body>
 </html>

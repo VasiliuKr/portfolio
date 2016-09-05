@@ -22,6 +22,7 @@ var myModule = (function () {
             transition: 'slideDown',
             onClose: function () {
             	divPopup.find('.form_alert').hide();
+            	divPopup.find('form').trigger('reset');
             }
 		});
 	};
@@ -33,46 +34,24 @@ var myModule = (function () {
 		// объявляем переменные
 		var form = $(this),
 			url = 'add_project.php',
-			myServerGiveAnswer = _ajaxForm(form, url);
-			
-
-		console.log(data);
-
-		// запрос на сервер
-		
-		myServerGiveAnswer.done(function(ans) {
-			var successBox = form.find('.form_alert-success'),
-				errorBox = form.find('.form_alert-fail');
-			if (ans.status === 'OK') {
+			defObj = _ajaxForm(form, url),
+			successBox = form.find('.form_alert-success'),
+			errorBox = form.find('.form_alert-fail');
+			if (validation.validateForm(form)) {
 				errorBox.hide();
 				successBox.show();
 			}else{
 				successBox.hide();
 				errorBox.show();
 			}
-		})
 	};
 
 	// Универсальная функция
-	// Для ее работы используются
-	// @form - форма
-	// @url - адрес php файла, к которому мы обращаемся
-	// 1. собирает данные из формы
-	// 2. проверяет форму
-	// 3. делает запрос на сервер и возвращает ответ с сервера
+	
 	var _ajaxForm = function (form, url) {
-		// if(!valid) return false;
-
-		data = form.serialize();
-
-		var result = $.ajax({
-			url: url,
-			type: 'POST',
-			dataType: 'json',
-			data: data,
-		});
-
-		return result;
+		console.log('ajax запрос, но с провекркой');
+		if (!validation.validateForm(form)) return false;
+		// если false то код ниж не произойдет
 	};
 
 	// Возвращает объект (публичные методы)

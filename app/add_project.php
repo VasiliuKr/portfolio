@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 	
 	$name = $_POST['projectName'];
 	$data = array();
@@ -14,4 +14,4 @@
 	echo json_encode($data);
 	exit;
 
- ?>
+ ?> -->

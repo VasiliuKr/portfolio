@@ -52,6 +52,7 @@
 	width: 150px;
 	margin-top: -10px;
 	top: 45%;
+	display: none;
 }
 .tooltip-text {
 	background: #f97e76;
@@ -121,6 +122,9 @@ textarea.form_input {
 	transform: translateY(3px);
 	box-shadow: none;
 	cursor: pointer;
+}
+.btn:focus {
+	outline: none;
 }
 .btn-submit {
 	background: #48cbe8;
